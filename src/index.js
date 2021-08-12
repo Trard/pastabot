@@ -2,7 +2,7 @@ const telegram_bot = require("./telegram_bot");
 const vk_bot = require("./vk_bot");
 const localtunnel = require("localtunnel");
 
-const telegram_port = 3000;
+const telegram_port = process.env.PORT || 3000;
 
 const start_all = async () => {
     const telegram_tunnel = await localtunnel({ port: telegram_port });
