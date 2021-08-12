@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Trard/pastabot#readme",
   "dependencies": {
+    "@vk-io/hear": "^1.1.0",
     "dotenv": "^10.0.0",
     "localtunnel": "^2.0.1",
     "sqlite3": "^5.0.2",
