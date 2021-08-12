@@ -37,7 +37,7 @@ bot.use(async (ctx, next) => {
 
 bot.command("paste", (ctx) => {
   db.get(
-    "SELECT * FROM 'paste' ORDER BY RANDOM() LIMIT 1;",
+    "SELECT * FROM 'paste2' ORDER BY RANDOM() LIMIT 1;",
     (err, res) => {
       console.log(res)
       ctx.reply(res.content);
