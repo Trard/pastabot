@@ -1,6 +1,6 @@
-# Name
+# Pastebot
 
-Description
+Bot for receiving pastes
 
 [![CI](../../actions/workflows/CI.yml/badge.svg)](../../actions/workflows/CI.yml)
 [![CD](../../actions/workflows/CD.yml/badge.svg)](../../actions/workflows/CD.yml)
@@ -19,14 +19,14 @@ Description
 
 ### Docker
 ```shell
-docker pull author/name
+docker pull trard/pastebot
 ```
 
 ### Github
 
 #### Clone
 ```shell
-git clone https://github.com/author/name.git
+git clone https://github.com/trard/pastebot.git
 ```
 
 #### Install Dependencies
@@ -43,5 +43,5 @@ npm run start
 
 ### Docker
 ```shell
-docker run author/name
+docker run trard/pastebot
 ```
