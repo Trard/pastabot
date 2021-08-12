@@ -38,9 +38,13 @@ bot.use(async (ctx, next) => {
 bot.command("paste", (ctx) => {
   db.get(
     "SELECT * FROM 'paste2' ORDER BY RANDOM() LIMIT 1;",
-    (err, res) => {
-      console.log(res)
-      ctx.reply(res.content);
+    async (err, res) => {
+      let content = res.content
+      console.log(content.length)
+      for (let part = 0; part < content.length; part = part + 4096) {
+        await ctx.reply(content.slice(part, part+4096));
+        await new Promise(r => setTimeout(r, 100)); //for the correct sequence of messages
+      }
     }
   );
 });
