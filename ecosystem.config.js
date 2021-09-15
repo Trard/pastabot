@@ -2,7 +2,7 @@ module.exports = {
   apps : [{
     name: "pastabot",
     script: 'npm start',
-    watch: true,
+    watch: false,
     env: {
       NODE_ENV: 'development'
     },
